@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Bisnis Sepeda Motor - SMK Muhammadiyah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2E8B57;
+            --secondary-color: #FFD700;
+            --accent-color: #1B4332;
+            --text-dark: #2C3E50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 120px 0 80px;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .curriculum-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .career-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .career-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .career-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .stats-box {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-success" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>SMK Muhammadiyah
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Jurusan
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="rpl.html">RPL</a></li>
+                            <li><a class="dropdown-item active" href="tbsm.html">TBSM</a></li>
+                            <li><a class="dropdown-item" href="tkr.html">TKR</a></li>
+                            <li><a class="dropdown-item" href="arsitektur.html">Arsitektur</a></li>
+                            <li><a class="dropdown-item" href="akutansi.html">akutansi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Teknik Bisnis Sepeda Motor</h1>
+                    <p class="lead mb-4">Program keahlian yang mempersiapkan siswa menjadi teknisi sepeda motor profesional dengan kemampuan perbaikan, perawatan, dan manajemen bisnis otomotif.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#curriculum" class="btn btn-light btn-lg">Lihat Kurikulum</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Daftar Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="asset/tbsm.jpg" alt="TBSM SMK Muhammadiyah" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Tentang Program TBSM</h2>
+                    <p class="lead">Teknik Bisnis Sepeda Motor (TBSM) adalah program keahlian yang menggabungkan kemampuan teknis perbaikan sepeda motor dengan pengetahuan bisnis dan kewirausahaan di bidang otomotif.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="feature-card card shadow-sm p-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-wrench text-success me-3 fs-4"></i>
+                                    <div>
+                                        <h6 class="mb-1">Engine Maintenance</h6>
+                                        <small class="text-muted">Perawatan dan perbaikan mesin</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card card shadow-sm p-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-bolt text-success me-3 fs-4"></i>
+                                    <div>
+                                        <h6 class="mb-1">Electrical System</h6>
+                                        <small class="text-muted">Sistem kelistrikan motor</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card card shadow-sm p-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-chart-line text-success me-3 fs-4"></i>
+                                    <div>
+                                        <h6 class="mb-1">Business Management</h6>
+                                        <small class="text-muted">Manajemen bengkel dan bisnis</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card card shadow-sm p-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-motorcycle text-success me-3 fs-4"></i>
+                                    <div>
+                                        <h6 class="mb-1">Motor Modification</h6>
+                                        <small class="text-muted">Modifikasi dan tuning motor</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="stats-box mb-4">
+                        <div class="stats-number">120+</div>
+                        <p class="mb-0">Siswa Aktif</p>
+                    </div>
+                    <div class="stats-box mb-4">
+                        <div class="stats-number">98%</div>
+                        <p class="mb-0">Tingkat Kelulusan</p>
+                    </div>
+                    <div class="stats-box">
+                        <div class="stats-number">90%</div>
+                        <p class="mb-0">Langsung Kerja</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section id="curriculum" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Kurikulum Pembelajaran</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="text-success mb-3">Kelas X (Semester 1-2)</h4>
+                    <div class="curriculum-item">
+                        <h6>Dasar-dasar Otomotif</h6>
+                        <p class="mb-0">Pengenalan komponen dan sistem sepeda motor</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <h6>Keselamatan Kerja</h6>
+                        <p class="mb-0">K3 dan penggunaan alat kerja bengkel</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <h6>Gambar Teknik</h6>
+                        <p class="mb-0">Membaca dan membuat gambar teknik otomotif</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="text-success mb-3">Kelas XI (Semester 3-4)</h4>
+                    <div class="curriculum-item">
+                        <h6>Sistem Mesin</h6>
+                        <p class="mb-0">Overhaul dan tune-up mesin sepeda motor</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <h6>Sistem Kelistrikan</h6>
+                        <p class="mb-0">Perbaikan sistem starter, pengisian, dan penerangan</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <h6>Sistem Transmisi</h6>
+                        <p class="mb-0">Kopling, transmisi, dan sistem pemindah tenaga</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <h4 class="text-success mb-3">Kelas XII (Semester 5-6)</h4>
+                    <div class="curriculum-item">
+                        <h6>Sistem Rem dan Suspensi</h6>
+                        <p class="mb-0">Perawatan dan perbaikan sistem rem dan suspensi</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <h6>Fuel Injection System</h6>
+                        <p class="mb-0">Sistem injeksi bahan bakar modern</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <h6>Manajemen Bengkel</h6>
+                        <p class="mb-0">Pengelolaan bengkel dan customer service</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="text-success mb-3">Praktik Kerja Industri</h4>
+                    <div class="curriculum-item">
+                        <h6>Magang di Bengkel Resmi</h6>
+                        <p class="mb-0">6 bulan pengalaman di dealer motor</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <h6>Sertifikasi Mekanik</h6>
+                        <p class="mb-0">Sertifikat dari ASTRA atau Yamaha</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <h6>Kewirausahaan</h6>
+                        <p class="mb-0">Membuka usaha bengkel mandiri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Prospects -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Prospek Karir</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="career-card">
+                        <i class="fas fa-wrench career-icon"></i>
+                        <h5>Mekanik Motor</h5>
+                        <p>Teknisi di bengkel resmi atau mandiri</p>
+                        <small class="text-success fw-bold">Gaji: 3-6 juta</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="career-card">
+                        <i class="fas fa-store career-icon"></i>
+                        <h5>Pemilik Bengkel</h5>
+                        <p>Wirausaha bengkel sepeda motor</p>
+                        <small class="text-success fw-bold">Omzet: 10-50 juta</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="career-card">
+                        <i class="fas fa-clipboard-check career-icon"></i>
+                        <h5>Service Advisor</h5>
+                        <p>Konsultan layanan di dealer motor</p>
+                        <small class="text-success fw-bold">Gaji: 4-8 juta</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="career-card">
+                        <i class="fas fa-cogs career-icon"></i>
+                        <h5>Spare Part Specialist</h5>
+                        <p>Ahli suku cadang dan aksesoris</p>
+                        <small class="text-success fw-bold">Gaji: 3-7 juta</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Fasilitas TBSM</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <img src="asset/bengkel tbsm.jpeg" alt="Workshop TBSM" class="img-fluid rounded mb-3">
+                        <h5>Workshop Sepeda Motor</h5>
+                        <p>Bengkel lengkap dengan berbagai jenis sepeda motor untuk praktik</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <img src="asset/motor drag.jpeg" alt="Engine Stand" class="img-fluid rounded mb-3">
+                        <h5>Engine Stand</h5>
+                        <p>siswa dan guru tbsm bekerja sama untuk membuat motor drag untuk berlomba</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <img src="asset/diagnosis.jpg" alt="Diagnostic Tools" class="img-fluid rounded mb-3">
+                        <h5>Diagnostic Tools</h5>
+                        <p>Peralatan diagnosis modern untuk sistem injeksi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title text-center">Tertarik dengan TBSM?</h2>
+                    <p class="lead mb-4">Bergabunglah dengan program Teknik Bisnis Sepeda Motor dan jadilah teknisi motor profesional!</p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="index.html#contact" class="btn btn-success btn-lg">Daftar Sekarang</a>
+                        <a href="tel:+6212345678" class="btn btn-outline-success btn-lg">Hubungi Kami</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 SMK Muhammadiyah. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="index.html" class="text-white me-3">Kembali ke Beranda</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
